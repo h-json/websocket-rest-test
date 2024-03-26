@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<table bgcolor='#ffffff' style="background-color: #ffffff; min-width: 800px; border-collapse: 0; border-spacing: 0; width: 100%;">
+  <tbody>
+  <tr>
+    <td align="center" style="border-collapse: collapse; padding: 60px 40px;">
+      <table align="center" bgcolor='#ffffff' style="border: 1px solid #dddddd; width:800px; border-collapse: collapse; background-color: #ffffff; font-family: NotoSansKR, Arial, sans-serif; font-size: 14px; color: #232323; line-height: 1.8em;">
+        <tbody>
+        <tr>
+          <td style="width: 800px; padding: 0 40px;">
+            <table style="width: 100%; border: 0; border-collapse: collapse; font-family: NotoSansKR,Arial,sans-serif; font-size: 14px; color: #232323; line-height: 1.8em; letter-spacing: -0.5px">
+              <tbody>
+              <tr>
+                <td style="padding:15px 0;">
+                  <span th:text="${type}">회원가입</span> 인증코드입니다.
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 20px 0 45px; font-weight: bold; font-size: 20px;">
+                  인증코드: <span th:text="${code}"></span>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </td>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  </tbody>
+</table>
+</body>
+
+</html>
